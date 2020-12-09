@@ -1,0 +1,224 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="j1/@6%RD~_vXndfIi6;d">Player</variable><variable type="KIND_SpriteKind" id="UTA`ap,x-VuP3OY8#eE%">Projectile</variable><variable type="KIND_SpriteKind" id="8nZFF*Uh]v}|:mgm!:*[">Food</variable><variable type="KIND_SpriteKind" id="DT`37T$qVmCmeL~RV#Er">Enemy</variable><variable id="#osCoW7P!q~Ke.czdqG8">mySprite</variable><variable id="*r1ft}|XJr-ip6Ha,VTD">mySprite2</variable><variable id="y$:ap3vw_[l,p_l:/44}">mySprite3</variable><variable id="VAu,pg1;_YKX`fWqFV|z">projectile</variable><variable id="e%NyXC/G|q!n*dmJ=MyF">projectile2</variable></variables><block type="pxt-on-start" x="-290" y="-170"><statement name="HANDLER"><block type="gameSplash"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="title"><shadow type="text"><field name="TEXT"/></shadow></value><value name="subtitle"><shadow type="text"><field name="TEXT">かいまな</field></shadow></value><next><block type="variables_set"><field name="VAR" id="#osCoW7P!q~Ke.czdqG8">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+2 3 4 5 6 7 8 9 a b f d e 1 5 . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="hudSetLife"><value name="value"><shadow type="math_number"><field name="NUM">100</field></shadow></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="#osCoW7P!q~Ke.czdqG8">mySprite</field></block></value><value name="vx"><shadow type="math_number"><field name="NUM">200</field></shadow></value><value name="vy"><shadow type="math_number"><field name="NUM">200</field></shadow></value><next><block type="gamesetbackgroundimage"><value name="img"><shadow type="background_image_picker"><field name="img">img`
+9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+9999999999999999999999999999......999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+9999999999999999999999969999999999............999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+9999999999999999999999966699999999.99999999999...........9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+999999999999999999999996996999999..9999999999999999999999............9999999999999999999999999999999999999999999999999229999999999999999999999999999999999999999
+999999999999999999999996999699999.99999999999999999999999999999999999...........99999999999999999999999999999999999222999999999999999999999999999999999999999999
+999999999999999999999996666966999.9999999999999999999999999999999999999999999999............99999999999999999999222999999999999999999999999999999999999999999999
+9999999999999999999999999996666666699999999999999999999999999999999999999999999999999999999............999999222299999999999999999999999999999999999999999999999
+99999999999999999999999999999996..966666666999999999999999999999999999999999999999999999999999999999999...........9999999999999999999999999999999999999999999999
+999999999999999999999.99999999996699999999966666669999999999999999999999999999999999999999999999999999222229999999............9999999999999999999999999999999999
+999999999999999999999..99999999.9.69999999999999996666666699999999999999999999999999999999999999999222229999999999999999999999...........99999999999999999999999
+9999999999999999999999...999999.9.96699999999999999999999966666666999999999999999999999999999999222229999999999999999999999999999999999..............99999999999
+99999999999999999999999.9.9999.99.999699999999999999999999999999996666999999999999999999999992222229999999999999999999999999999999999..99999999999999......99999
+99999999999999999999999.99.999.99.999969999999999999999999999999999999699999999999999999992222229999999999999999999999999999999999...99999999...9999999999999999
+999999999999999999999999.99...999.999996699999999999999999999999999999699999999999999992222229999999999999999999999999999999999...999999.....9.99999999999999999
+9999999999999999999999999.999.999.9999999699999999999999999999999999996999999999999222222299999999999999999999999999999999999..999......9999..999999999999999999
+9999999999999999999999999.92.9.9.99999999969999999999999999999999999996999999999222992299999999999.99999999999999999999999........999999999.99999999999999999999
+99999.99999999999999999999.9.29..999999999966999999999999999999999999969999992229922299999999999..9999999999999999999999.....9999999999999.999999999999999999999
+999999..9999999999999999999..229..9999999999969999999999999999999999999699222992229999999999999.9999999999999999999.....99999999999999999.9999999999999999999999
+9999999..999999999999999999.9.92.9.6699999999966999999999999999999999996229922299999999999999..99999999299999........999999999.....9999..99999999999999999999999
+99999999...9999999999999999..9.9.29..669999999996999999999999999999922269922999999999999999..99999999229.....999...999........99..9999.9999999999999999999999999
+999999999...99999999999999.99..9.2299.9669999999969999999999999992229996229999999999999999..9999999.....99999.........99999999..99999.99999999999999999999999999
+99999999999...999999999999.99.9..92299.9.666999999669999999992222999.2269999999999999999..999......22........999999999999999..999999.999999999999999999999999999
+999999999999.9.9999999999.9999...992229.9.99669999996999992229999222..96999999999999999..............999...999999999999999..9999999.99999999999999999999999.9999
+9999999999999.9..99999999.9999.9.9999229...9996669999692229999222999..9969999999999.........9992999299..9999999999999999..9999999..99999999999999999999999.99999
+99999999999999.99.999999.999999...99992299..99999669226699992299999.9.99699...........9999999229992...9999999999999999..99999999.999999999922299999999999.999999
+999999999999999.99..9999.9999999..999992229..9999926699962229999999.....6.....9999...99999992999...99999999999999999..999999999.999999222229299999999999.9999999
+9999999999999999.999.999.9992999.9.999992229..9999929666266.............69999999...99999992299..299999999999999999..9999999999.922222299999299999999999.99999999
+99999999999999999.999...99999229...99999922299.999......669699.....9..996999999...999999929...929999999999999999..9966669992..229999999992299999999999.999999999
+999999999999999999.9999.9999992.99..99999.........9999299.666.9999.9..9996999...999999922..99929999999999999996666669922222.9999999999992999999999999.9999999999
+9999999999999999999..9.9..99d99.2........9922229..9......999666999.9..999699...9999999...9999299999999996666669922.2229999.9999999999992999999999999.99999999999
+999999999999999999999..999.d.....92..999999292......9999299999966.99..9996...9999999..999999929999666666999.22229.9999999.9292222929992999999999999.999999999999
+999..9999999999999922..9999..d9.9292..999.....2222...999..2999996669..99.6..99999...999999966666669999222..999999.99999..22229999929929999999999999.999999999999
+99999...9999999999992.2222ddd.d.292......99992922d2....999..99999666669.969999...2999666666299992222229..99999999.9999.992229299992229999999999999.9999999999999
+99999999....99999999..29.d2222.....2d..29999992dd292.9..9999..99.996..66.969..96666669999922222299999..999999999.9999.999292992299229999999999999.99999999999999
+999999999999...99999.2222.9...d.222229..299999d2d.29229..99992.....966.96666666999999922222999.9999..99999999999.999.999999929992292999999999999.999999999999999
+999999999999999...99.9999222222.9..222..922999d2d.d29.29...99922.....66669666299922222992..99.999..999999999999.99..999999992222229929999999999.9999999999999999
+999999999999999999....999d22.dd.2222222..222299d2dd929.299..992........6..62266229999992999......99999999999999.9.9999...999222299292999999999.99999999999999999
+9999999999999999999.99...9dd2...d99d.292.222222222d9922.229..29.9...9..2666..99666999929999.9..99......99999999.......99999292229992299999999.999999999999999999
+999999999999999999.999999...d22..9ddd929..92292222222222.929.....2222....9699...996699299....9999999999.........9999999999222229999992999999.9999999999999999999
+999999999999999999.99999dd9d....2..ddd92...992222d92d9222222....29222..29..69999...96699...99999999......9999..2222222222222222222299999999.99999999999999999999
+99999999999999999.99999999dddd66.....d992..9dd.222d2992222..2...22222..222266622222...6662222222222222222222..2999999999992999999999999999.999999999999999999999
+99999999999999999.9999999ddddd.6666....dd2..99.dd222222...22.2.2.2222..22226996.999299...66..99999999999999.9.999999999992999999999999999.9999999999999999999999
+9999999999999d99.9999999dddddd.dd66666...d2.29.dddd22....9..2.929..222.2999622266.2....999.669999999999999.9.999999999992999999999999299.9999d999999999999999999
+999999999999ddd9.999999999dddd.dddd662666....2.dd9.....99.922.99229.22.222262....6...22229999666999999999.99.99999999992999999999992299.9999dd999999999999999999
+999999999999dd99.9999999dddddd.ddddd.662d666......99.99..9929.229929...222296222..6...99922222226699999..999.9999999922999999999992999.dd996dd999999999999999999
+99999999999ddd9.9999999ddddddd.dddddd.d622dd66.2....99.22229.222...2....922226..92.662...9999999226662.2999.9999999929999999999922999.9dd66ddd999999999999999999
+9999999999ddddd.99999ddddddddd.ddddddd.d662...666......92.22...2229922...929..62..99d6222..9999999999669222.2229999299999999992299d9.9dd6d9ddddd9999999999999999
+99999999999ddd.9...ddddddddddd.dddddddd..d662d...666......22.229292999.9....9926222ddd69992..2299999.99669.9999222222299999992999dd.99d6dd99dd999999999999999999
+999999999999dd.999d......ddddd.dddddddddd.d.66...22.666922...292229299.2...922.2699222d6699.9..222..99996669999992999922222229999d.d966dd99dddddd999999999999999
+9999999999dd2.29ddddddddd......dddddddd.......66.d22d.26669.9....22929..229.2.292699dd2226.d999...9666669.99999229999999992992222d.d6ddddddddd999999999d99999999
+99999999999dd.222222dddddddddd.........ddd..dddd6dd222d..26669992.......9922..92926ddddd9.62d666666999992.22292999999999229999999.66d9dddd999dd99999999d99999999
+999999999999.ddd22dd2222ddd......dd........d.dddd66222dd2...266692......9922dd.92996ddd96666622.999999999.9992222999992299999999.6dd99ddddd99d99999999dddd999999
+999999999969.ddddd22d...22222d.dddddddd.......ddd.26622222.22222666222....2222222226666622226..222222222.2222222222222999999999.6ddddddddddd9d999999999d99999999
+999999999996.ddddd..22ddddddd.2222dddd.dd.dddd......26622d.9.92.9996662.92....66666226.22222.62222222222.22222999922999999999966ddddddddddddddddd9999dddd9999999
+9999999999d.66ddddddd.22..ddd.dddd22..dd.dddddd.dd....2662.22..222222266666666...2.d2.62222.22622229999.9d2d9999229999999d99969ddddd99ddddddddddddd999ddd9999999
+99999999ddd.dd6ddddddddd22.....ddd..2222222222222.2.2222262....299.66666266622222....22629.ddd699999999.22ddd922999999999d9669dddddddddddddddddddddd99ddddd99999
+9999999ddd.dddd6dddddd2222222.222...dddd.dd22222d..d.d2dd.66d966666...2..22266d2292.....6.ddd9969999999.ddd22299999999999d6.9999dddddddddddddddddddddddddd999999
+999999dddd.ddddd6dddddddddddd.2..ddd.....ddddddd22.2..2..666669992.9.....d22dd6662.2ddd..6.ddddd699999.d922dd9999999999996.99922ddddddddddddddddddddddddd9999999
+99999dddd.ddddddd6ddddddddddd..22dddddd.d.....dddd.d66666dd22266992..99.....2..2d66622.dd26...ddd6d992.22dddd999999999966.d9229dddddddddddddddddddddddddd9999999
+999dddddd.ddddddd6ddddddddddd.ddd22ddd.ddddddd666666.2.d.222222d69929.9..9..d22.2...666ddd2622....622.2ddddddd9999999969.d2299dddddddddddddddddddddddddddd999999
+99dddddd.ddddddddd6dddddddddd.ddddd22d.dd66666ddd....2...dddd222266299...2222222.22..22666226d2ddd.6..d9dddd9d999999669.22dd99dddddddddddddddddddddddddddddd9999
+9ddddddd.dddddddddd6dddddddd..ddddddd2666dddddd..d.dd2d......d222226622..ddddd..22.2dddddd6666d2d2dd6...ddddd999999692.29dd99ddddddddddddddddddddddddddddddddd99
+dddddddd.ddddddddddd6dddddd.d.ddddddd.d22dddd..dddd.2dd..dddd..22222966..222dd.d2.2d2dddddddd66d22dd.6dd....dd9996622.9ddddd666ddddddddddddddddddddddddddddddddd
+ddddddd.ddddddddddddd6dddd.dd.ddddddd.ddd22..dddddd.2dd...ddddddd22.2.266.d.2.22.2.222ddddddddd6dd2d.d6ddddd...96229.9666666dd6ddddddddddddddddddddddddddddddddd
+ddddddd.ddddddddddddd6ddd.ddd.dddddd.ddddd.d22ddddd.dd.dd.2222222222222.2622.22.2222222222222222622.ddd6ddddddd6.66666999ddddd6ddddddddddddddddddddddddddddddddd
+dddddd.ddddddd22222222622.22.22222222222..222222222.22.22....dddddd22dd.d.66.....dd2d22222ddddddd6d.dddd6dd6666669...99ddddddd6ddddddddddddddddddddddddddddddddd
+dddddd.dddddddddd22222d6.ddd.222222222..dddddddd22d.dd.ddd.dd.dddddd22d.2..d66d.....2.dd222222dddd6ddd6666626dddd.999....ddddd6ddddddddddddddddddddddddddddddddd
+ddddd.dddddddddddddddd2.62dd.dddd.d...22222222222222..2dddd.dd.dddddd22.d.2.dd66d.ddd2...22.d222666666dd2666ddddd.ddddddd...dd6ddddddddddddddddddddddddddddddddd
+ddddd.dd2ddddddddddddd.d6d22.22ddd..dddddddddddddd2d..d222...2222222222....22ddd66..dd2dddd66666dd.62222d66ddddd.ddddddddddd..6dddddd..ddddddddddddddddddddddddd
+dddd.ddddddddddddddddd.dd6dd.dd2..22.ddddddddddddd2d......dd.ddd.dddddd...22222222622666666dddddd.d26d2d6226ddd.ddddddddddddd6d......ddddddddddddddddddddddddddd
+dddd.dddddddddddddddd.dddddd.d..dd.d2.22ddddddddd2d...dd222d..ddd.dddd..2.d2ddd266666..2222222222.222666222d62.22dddddddddddd6ddd.....dddddddddddddddddddddddddd
+dddd.ddddddddddddddd.ddddddd..ddd.dddd..22222dd6666666ddddd22.dddd.dd..dd266666622ddd66.dd2dddd2.dddd66dddd226222222ddddddddd6d..ddddd...ddddddddddddddddddddddd
+ddd.ddddddddddddddd.dddddd...dddd..............222....66666666666666.66666.2d2dddd222dd66.d2222d.dd66dd6dddd.d6dddddddddddddd6.dddddddddd....ddddddddddddddddddd
+ddd.ddddddddddddddd.dddd..dd.dddddddddddd...dddd2d2.2.dddddddd.6666666666666666666222....6622dd.dd6ddddd6dd.ddd6ddddddddddd..6ddddddddddddddd...dddddddddddddddd
+dd.ddddddddddddddd.ddd..dddd.dddddddd....dd.dddd2dd.d.222266666.d2..d..ddd.d22d2dd66666666666666d6ddddddd6.ddddd6dddddddd..dd6dddddddddddddddddd..dddddddddddddd
+dd.dddddddddddddd.dd..dddddd.ddddd...ddddddd.dd2ddd.666666d2222.d..22dd.dd.dd222dddddd222ddd66266666666dd.6dddddd6ddddd..dddd6dddddddddddddddddddddddddddddddddd
+d..........................d.d....ddddddddddd..66666d.dddddddddd.222d22d.d.ddd222dd222dd2222dd66dddddddd.dd6dddddd6dd..dddddd6dddddddddddddddddddddddddddddddddd
+ddddddddddddddd.dddddddddddd..ddddddddddd666666.ddd22.2dddddddd...dd22222..d...222.dddddd22d66.d66ddddd.dddd6dddddd6.ddddddd6ddddddddddddddddddddddddddddddddddd
+ddddddddddddddd.dddddddddddddddddddd66666ddddd2d..ddd.d222222dd.d.ddddddd22222d2222.ddddddd6d.d22266dd.dddddd6ddd..d6ddddddd6ddddddddddddddddddddddddddddddddddd
+dddddddddddddd.ddddddddddddddd666666dddddddddd2ddd.ddd.dddddd2.222.ddddddddd22222222.ddddd6d2.dddd226.dddddddd6..dddd6dddddd6ddddddddddddddddddddddddddddddddddd
+ddddddddddddd.ddddddddddddd66666dddddddddddddd2dddd.dd.dddddd.dddd.222222d222d22dd22.22d66dd.d2dddd2.662dddd..d6ddddd6dddddd6ddddddddddddddddddddddddddddddddddd
+dddddddddddd.ddddddddddddddddddd66666666dddddddddddd...ddddd.dddddd.dddd2222222d22d22.d62222.dd22dd.2dd662..dddd6ddddd6ddddd6ddddddddddddddddddddddddddddddddddd
+dddddddddddd.ddddddddddddddddddddddddddd66666666dddddd.dddd.dddddddd.d22ddddddd22222266ddddd.22222.dd2dd.662222dd6ddddd6dddd6ddddddddddddddddddddddddddddddddddd
+ddddddddddd.dddddddddddddddddddddddddddddddddddd66666666.d.ddddddddd.2dddddddddddddd622.222.ddddd.222d..ddd66dd2226ddddd6ddd6ddddddddddddddddddddddddddddddddddd
+dddddddddd.dddddddddddddddddddddddddddddddddddddddddddd.66666666d222d.ddddddddddddd6dd22ddd.222d.ddd..2222ddd6dddd262dddd6d6dddddddddddddddddddddddddddddddddddd
+ddddddddd.ddddddddddddddddddddddddddddddddddddddddddddd..d.dddd266666666ddddddddd66ddddd22.dddd.dd..dd2dd2222266dddd6222dd66dddddddddddddddddddddddddddddddddddd
+ddddddddd.ddddddddddddddddddddddddddddddddddddddddddddd.ddd..22ddddddd.d666666666dddddddd2.22dd...ddddd22d2dddd2662dd6dd2226dddddddddddddddddddddddddddddddddddd
+dddddddd.ddddddddddddddddddddddddddddddddddddddddddddd..ddd22.ddddddddd.dddddd66666666666d.dd2..ddddddddd2d2dddddd662262ddd662dddddddddddddddddddddddddddddddddd
+ddddddd.ddddddddddddddddddddddddddddddddddddddddddddddd.222ddd..ddddddd.ddddd6ddddddddddd66666666ddddddddd222ddddddd6dd6222626222ddddddddddddddddddddddddddddddd
+dddddd.ddddddddddddddddddddddddddddddddddddddddddddddd2.dddddddd.ddddddd.dd66dddddddddddd....dddd66666666ddd22ddddddd66d6dd6d2622222dddddddddddddddddddddddddddd
+ddddd.dddddddddddddddddddddddddddddddddddddddddddddd22dd.dddddddd.dddddd.d6ddddddddddddd..d.d2ddddd22dddd66666666dddddd666d6ddd6d222222ddddddddddddddddddddddddd
+ddddd.ddddddddddddddddddddddddddddddddddddddddddd222dddd.ddddddddd..ddddd6dddddddddddddddd.ddd2dddddd22dddddddd2d6666666666ddddd6ddddd222ddddddddddddddddddddddd
+dddd.dddddddddddddddddddddddddddddddddddddddddd22ddddddd.ddddddddddd.dd66d.dddddddddddddd.ddddd2ddddddd22dddddddddddddddd66666666ddddddddddddddddddddddddddddddd
+ddd.ddddddddddddddddddddddddddddddddddddddddd22ddddddddd.ddddddddddddd6ddd.ddddddddddddd.ddddddd2dddddddddddddddddddddddddddd6ddd66666dddddddddddddddddddddddddd
+ddddddddddddddddddddddddddddddddddddddddddd22ddddddddddd.ddddddddddd66ddddd.ddddddddddd.dddddddddddddddddddddddddddddddddddddd66dd6ddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd222ddddddddddddd.dddddddddd6ddddddd.dddddddddd.ddddddddddddddddddddddddddddddddddddddddd66d6dddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddd22ddddddddddddddddd.dddddddd6ddddddddd.dddddddd.dddddddddddddddddddddddddddddddddddddddddddd666ddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddd22ddddddddddddddddddd.dddddd66ddddddddddd.dddddd.ddddddddddddddddddddddddddddddddddddddddddddddd66dddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddd22ddddddddddddddddddddd.ddddd6ddddddddddddd.ddddd.dddddddddddddddddddddddddddddddddddddddddddddddddd6ddddddddddddddddddddddddd
+ddddddddddddddddddddddddddddddd222ddddddddddddddddddddddd.ddd66ddddddddddddddd.ddd.ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddddddddddd22dddddddddddddddddddddddddd.dd6dddddddddddddddddddd.dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddddddddd22ddddddddddddddddddddddddddddd.6dddddddddddddddddddd.ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddddddd22dddddddddddddddddddddddddddddd66dddddddddddddddddddd.dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddddd22ddddddddddddddddddddddddddddddd6d.ddddddddddddddddddd.ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.ddddddddddddddddddd.ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.dddddddddddddddddd.dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.ddddddddddddddddd.ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+`</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block><block type="variables_set" disabled="true" x="270" y="-190"><field name="VAR" id="y$:ap3vw_[l,p_l:/44}">mySprite3</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" disabled="true"><value name="img"><shadow type="screen_image_picker" disabled="true"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . 7 7 7 7 7 7 7 . . . 
+. . . . . . 7 7 7 7 7 7 7 7 . . 
+. . . . . 7 7 f 7 7 f 7 7 7 . . 
+. . . 7 7 6 7 7 7 7 7 7 7 7 . . 
+. . . 7 7 7 7 3 3 2 3 7 7 7 . . 
+. . . 6 7 7 6 7 7 7 7 7 7 7 . . 
+7 7 7 6 7 7 7 6 7 6 7 7 7 7 7 7 
+7 7 7 7 6 6 6 6 7 7 7 7 7 7 7 7 
+. . . 6 7 7 7 7 6 7 6 7 7 7 7 7 
+. . . 6 6 6 6 6 6 6 6 6 6 6 . . 
+. . . 7 7 7 7 7 7 6 6 6 7 7 . . 
+. . . 7 7 7 7 7 7 7 7 7 7 7 . . 
+. . . 7 7 7 . . . . . 7 7 7 . . 
+. . . 7 7 7 . . . . . 7 7 7 . . 
+. . . 7 7 7 . . . . . 7 7 7 . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" disabled="true"><field name="MEMBER">Enemy</field></shadow></value></block></value></block><block type="gameinterval" x="290" y="10"><value name="period"><shadow type="timePicker"><field name="ms">500</field></shadow></value><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="*r1ft}|XJr-ip6Ha,VTD">mySprite2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . 6 6 6 6 6 6 . . . . . 
+. . . . . 6 6 6 6 6 6 6 . . . . 
+. . . . 6 6 6 6 6 6 6 6 6 . . . 
+. . . 6 6 6 f 6 6 6 6 f 6 6 . . 
+. . 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+. . . . . d d d d d d d d d . . 
+. . . . . d d d d d d d d d . . 
+. . . . . d d d d d d d d d . . 
+. . . . . d d 7 d d d d d d . . 
+2 f f . . 7 7 7 7 7 7 7 7 7 7 7 
+f f f 9 9 9 7 7 7 7 7 7 7 7 9 9 
+f 2 f . . 7 7 7 7 7 7 7 7 7 7 . 
+. . . . . 7 7 7 7 7 7 7 7 7 7 . 
+`</field></shadow><block type="screen_image_picker"><field name="img">img`
+6 a 6 8 6 6 6 6 8 6 6 6 6 6 6 6 
+. . . . . 6 6 6 6 6 6 . . . . . 
+. . . . . 6 6 6 6 6 6 6 . . . . 
+. . . . 6 6 6 6 6 6 6 6 6 . . . 
+. . . 6 6 6 f 6 6 6 6 f 6 6 . . 
+. . 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+. . . . . d d d d d d d d d . . 
+. . . a a d d d d d d d d d . . 
+. . . . . d d d d d d d d d . . 
+. . . . . d d 7 d d d d d d . . 
+2 f f . . 7 7 7 7 7 7 7 7 7 7 7 
+f f f 9 9 9 7 7 7 7 7 7 7 7 9 9 
+f 2 f . . 7 7 7 7 7 7 7 7 7 7 . 
+. . . . . 7 7 7 7 7 7 7 7 7 7 . 
+`</field></block></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="spritesetvel"><value name="sprite"><block type="variables_get"><field name="VAR" id="*r1ft}|XJr-ip6Ha,VTD">mySprite2</field></block></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">-100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">0</field></shadow></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="*r1ft}|XJr-ip6Ha,VTD">mySprite2</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">180</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value></block></next></block></next></block></statement></block><block type="keyonevent" x="-270" y="210"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="VAu,pg1;_YKX`fWqFV|z">projectile</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromsprite"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+5 5 5 5 5 2 2 2 2 2 2 2 . . . . 
+5 5 5 5 5 5 2 2 2 2 2 2 . . . . 
+5 5 8 5 5 5 2 2 2 2 2 2 . . . . 
+5 5 5 5 5 5 2 2 2 2 2 2 2 . . . 
+5 5 5 5 5 5 2 2 2 2 . 2 2 2 . . 
+. . . . . . . . . . . 2 2 . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></block></value><value name="sprite"><block type="variables_get"><field name="VAR" id="#osCoW7P!q~Ke.czdqG8">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow></value></block></value></block></statement></block><block type="spritesoverlap" x="-270" y="350"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Projectile</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Enemy</field></shadow></value><statement name="HANDLER"><block type="spritedestroy"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></block></value><next><block type="startEffectOnSprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><field name="effect">effects.spray</field><value name="sprite"><block type="variables_get"><field name="VAR" id="#osCoW7P!q~Ke.czdqG8">mySprite</field></block></value><value name="duration"><shadow type="timePicker"><field name="ms">500</field></shadow></value><next><block type="hudChangeScoreBy"><value name="value"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block></next></block></next></block></statement></block><block type="spritesoverlap" x="-270" y="730"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Enemy</field></shadow></value><statement name="HANDLER"><block type="spritedestroy"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></block></value><next><block type="hudChangeScoreBy"><value name="value"><shadow type="math_number"><field name="NUM">-1</field></shadow></value></block></next></block></statement></block></xml>
